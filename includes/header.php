@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Management System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/images/logo.png" alt="Conference Logo" class="logo">
+            <h1>Conference Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/conference.php">Home</a></li>
+                <li><a href="/pages/committee_members.php">Committees</a></li>
+                <li><a href="/pages/attendees.php">Attendees</a></li>
+                <li><a href="/pages/add_attendee.php">Register Attendee</a></li>
+                <li><a href="/pages/schedule.php">Schedule</a></li>
+                <li><a href="/pages/hotel_rooms.php">Hotel Rooms</a></li>
+                <li><a href="/pages/sponsors.php">Sponsors</a></li>
+                <li><a href="/pages/add_company.php">Add Company</a></li>
+                <li><a href="/pages/delete_company.php">Delete Company</a></li>
+                <li><a href="/pages/all_jobs.php">All Jobs</a></li>
+                <li><a href="/pages/company_jobs.php">Jobs by Company</a></li>
+                <li><a href="/pages/edit_session.php">Edit Session</a></li>
+                <li><a href="/pages/financials.php">Financials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>

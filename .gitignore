@@ -1,0 +1,25 @@
+# Database configuration with credentials
+config/database.php
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Test files
+test_*.php
+TASK*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
