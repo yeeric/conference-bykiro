@@ -17,15 +17,10 @@
                 <li><a href="/conference.php">Home</a></li>
                 <li><a href="/pages/committee_members.php">Committees</a></li>
                 <li><a href="/pages/attendees.php">Attendees</a></li>
-                <li><a href="/pages/add_attendee.php">Register Attendee</a></li>
                 <li><a href="/pages/schedule.php">Schedule</a></li>
                 <li><a href="/pages/hotel_rooms.php">Hotel Rooms</a></li>
                 <li><a href="/pages/sponsors.php">Sponsors</a></li>
-                <li><a href="/pages/add_company.php">Add Company</a></li>
-                <li><a href="/pages/delete_company.php">Delete Company</a></li>
                 <li><a href="/pages/all_jobs.php">All Jobs</a></li>
-                <li><a href="/pages/company_jobs.php">Jobs by Company</a></li>
-                <li><a href="/pages/edit_session.php">Edit Session</a></li>
                 <li><a href="/pages/financials.php">Financials</a></li>
             </ul>
         </nav>
