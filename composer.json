@@ -1,0 +1,9 @@
+{
+    "name": "conference/management-system",
+    "description": "Conference Management System - plain PHP/PDO application",
+    "require": {
+        "php": ">= 8.2",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    }
+}
