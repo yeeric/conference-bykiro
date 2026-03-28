@@ -14,6 +14,9 @@
 
 runtime: php82
 
+automatic_scaling:
+  max_instances: 1
+
 # Static file handlers must be declared before the entrypoint so GAE serves
 # these directories directly with the correct MIME types (text/css, image/*).
 # Without this, all requests — including CSS and images — are routed through
