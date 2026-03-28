@@ -14,29 +14,30 @@
 
 runtime: php82
 
+# Static file handlers must be declared before the entrypoint so GAE serves
+# these directories directly with the correct MIME types (text/css, image/*).
+# Without this, all requests — including CSS and images — are routed through
+# PHP, which serves them as text/html and causes browsers to ignore them.
 handlers:
 - url: /css
   static_dir: css
 - url: /images
   static_dir: images
 
+# index.php acts as a router: it dispatches each request to the correct PHP
+# page and sets the working directory so relative includes resolve correctly.
 entrypoint: serve index.php
 
-
-# Remember - storing secrets in plaintext is potentially unsafe. Consider using
-# something like https://cloud.google.com/secret-manager/ to help keep secrets secret.
+# Database credentials for Cloud SQL (MySQL).
+# These are injected as environment variables and read by config/database.php.
+# WARNING: storing secrets in plaintext is unsafe for production.
+# Consider migrating to https://cloud.google.com/secret-manager/
 env_variables:
   INSTANCE_UNIX_SOCKET: /cloudsql/gen-lang-client-0129527036:us-west1:conference
   DB_USER: "conf"
   DB_PASS: "jieWang1990!"
   DB_NAME: "ConferenceDB"
 
-  # Defaults to "serve index.php" and "serve public/index.php". Can be used to
-  # serve a custom PHP front controller (e.g. "serve backend/index.php") or to
-  # run a long-running PHP script as a worker process (e.g. "php worker.php").
-  #
-  # entrypoint: serve index.php
-  #
+# Authorises the app to connect to the Cloud SQL instance via a Unix socket.
 beta_settings:
   cloud_sql_instances: gen-lang-client-0129527036:us-west1:conference
-#
