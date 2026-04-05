@@ -46,7 +46,7 @@ $jobs = $jobsStmt->fetchAll();
                         <td><?php echo htmlspecialchars($job['Location']); ?></td>
                         <td><?php echo htmlspecialchars($job['City']); ?></td>
                         <td><?php echo htmlspecialchars($job['Province']); ?></td>
-                        <td>$<?php echo formatCurrency($job['PayRate']); ?>/hour</td>
+                        <td><?php echo formatCurrency($job['PayRate']); ?>/hour</td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
