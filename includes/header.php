@@ -9,7 +9,6 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="/images/logo.png" alt="Conference Logo" class="logo">
             <h1>Conference Management System</h1>
         </div>
         <nav>
